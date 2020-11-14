@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './Components/Header';
+import Slider from './Components/slider';
+import Sidebar from './Components/Sidebar';
+import Footer from './Components/Footer';
+/*import SeccionPruebas from './Components/SeccionPruebas';
+import Peliculas from './Components/Peliculas';*/
+import Router from './Router';
 
 function App() {
+  var boton= "ASASD"
   return (
     <div className="App">
+      
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          primer cambio
-        </a>
+      <Header/>  
       </header>
+      <Slider
+      title= "Habiaunavezunbarco chiquito"
+      btn={boton}
+      /> 
+      <div className="center">
+
+        <Router></Router>
+        {/*
+           <Peliculas></Peliculas>
+        */ }
+      
+        <Sidebar/>
+      </div>
+
+      <div className="clearfix"></div>
+      <Footer/>
     </div>
   );
 }
