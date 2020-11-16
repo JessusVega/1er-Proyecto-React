@@ -7,22 +7,15 @@ class Sidebar extends Component{
         return(
             
             <aside id="sidebar">
-<<<<<<< HEAD
                 {this.props.blog === "true" &&
                     <div id="nav-blog" className="sidebar-item">
-=======
-                <div id="nav-blog" className="sidebar-item">
->>>>>>> 3b3da2b935d7cd6d6022102a9f6571dbb6212a9e
                     <h3>Puedes hacer esto</h3>
                     <a href="#" className="btn btn-success">Crear artículo</a>
                 </div>
 
-<<<<<<< HEAD
                 }
                 
 
-=======
->>>>>>> 3b3da2b935d7cd6d6022102a9f6571dbb6212a9e
                 <div id="search" className="sidebar-item">
                         <h3>Buscador</h3>
                         <p>Encuentra el artículo que buscas</p>
