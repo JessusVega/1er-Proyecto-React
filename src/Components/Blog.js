@@ -1,24 +1,31 @@
 import React, { Component } from 'react';
 import Slider from './slider';
 import Sidebar from './Sidebar';
+import Articles from './articles';
 
-class Home extends Component {
+class Blog extends Component {
 
     render() {
-        
+
         return (
 
             <div id="home">
                 <Slider
-                    title="Bienvenido al blog"
-                    size="slider-small"
+                    title="Habiaunavezunbarco chiquito"
+                    btn="Ir al blog"
+                    size="slider-big"
                 />
 
                 <div className="center">
                     <div id="content">
-                       
+                        <h1 className="subheader">Ultimos Articulos</h1>
+                        <Articles
+                        home="true"
+                        ></Articles>
                     </div>
-                    <Sidebar/>
+                    <Sidebar
+                   
+                    />
                 </div>
 
             </div>
@@ -26,4 +33,4 @@ class Home extends Component {
         );
     }
 }
-export default Home
+export default Blog;

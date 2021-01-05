@@ -4,17 +4,17 @@ import Sidebar from './Sidebar';
 
 import Articles from './articles';
 
-class Home extends Component {
+class Search extends Component {
 
  
     render() {
     
-
+        var searched = this.props.match.params.search;
         return (
 
             <div id="home">
                 <Slider
-                    title="Bienvenido al blog"
+                    title={"Busqueda: " + searched}
                     size="slider-small"
                 />
 
@@ -22,11 +22,11 @@ class Home extends Component {
                     <div id="content">
                  
                        <Articles
+                        search = {searched}
                        />
                     
                     </div>
-                    <Sidebar 
-                     blog="true"/>
+                    <Sidebar/>
                 </div>
 
             </div>
@@ -34,4 +34,4 @@ class Home extends Component {
         );
     }
 }
-export default Home;
+export default Search;

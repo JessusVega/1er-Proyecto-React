@@ -34,7 +34,7 @@ class SeccionPruebas extends Component{
                         <span className="date">
                             Hace 5 minutos
                         </span>
-                        <a href="#">Leer más</a>
+                      
 
                         <div className="clearfix"></div>
                     </article>
